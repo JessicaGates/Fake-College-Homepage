@@ -2,29 +2,71 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-size: 10px;
+
 }
 
-/* Layout */
-
 section {
-
+flex: 1;
+}
+section:nth-of-type(3){
+  flex: 1;
 }
 
 main {
-  
+display: flex;
+flex-wrap: wrap;
 }
 
 aside {
-
+flex: 1;
 }
 
 nav {
+display:flex;
+flex-wrap: wrap;
+}
+
+button{
+  font-size: 1.2rem;
+  font-family: 'Arapey', serif;
+  text-align: center;
+  line-height: 1.5;
+  align-items: center;
+}
+
+div{
+display: flex;
+height: 100px;
+align-items: center;
+justify-content:center;
+}
+
+vertical-menu{
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+a {
+  color: #BF696F;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#CDA6A9;
+}
+
+ a:active {
+   color:#BF696F;
 
 }
 
@@ -44,3 +86,30 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+h1 {
+  font-size: 2.0rem;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  letter-spacing: .5;
+}
+h2{
+  font-size: 1.4rem;
+  font-family: 'Libre Baskerville', serif;
+  text-align: left;
+  letter-spacing: .5;
+}
+p {
+  font-size: 1.2rem;
+  font-family: 'Arapey', serif;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1;
+  word-spacing: .5;
+  text-indent: 20px;
+}
+ul,ol {
+  font-size: 1.2rem;
+  font-family: 'Arapey', serif;
+  text-align: left;
+  line-height: 1.5;
+}
